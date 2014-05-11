@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Soso</string>
+    <string name="action_settings">Settings</string>
+    <string name="locate">定位</string>
+    <string name="trackinfo">轨迹</string>
+    <string name="quit">退出</string>
+    <string name="sendok">发送成功</string>
+    <string name="sendfail">发送失败</string>
+</resources>

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <com.tencent.mapapi.map.MapView
+        android:id ="@+id/map"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:apiKey="ed87223dc2aa099166e4bc5aa6ee637d"/>
+
+    <Button
+        android:id="@+id/locButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/locate" />
+
+    <TextView
+        android:id="@+id/trackinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/trackinfo" />
+
+</RelativeLayout>
