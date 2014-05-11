@@ -32,7 +32,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends MapActivity {
 	MapView mMapView = null;
@@ -101,12 +100,7 @@ public class MainActivity extends MapActivity {
 				mMapView.invalidate();
 				//将经纬度发给服务器servlet
 				try {
-					boolean result = ServletService.sendRequest(iLatitu,iLongi);
-					if(result){
-						Toast.makeText(getApplicationContext(), R.string.sendok, Toast.LENGTH_SHORT).show();
-					}else {
-						Toast.makeText(getApplicationContext(), R.string.sendfail, Toast.LENGTH_SHORT).show();
-					}
+					ServletService.sendRequest(iLatitu,iLongi);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
